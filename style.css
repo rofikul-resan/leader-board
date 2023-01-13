@@ -12,9 +12,20 @@
 ------------------- */
 
 body{
-    max-width: 1440px;
+    max-width: 1700px;
     margin: 0 auto;
     background: #f3f1ff;
+}
+
+
+
+.contener{
+    width: 70%;
+    background: #fff;
+    margin-top: 30px;
+    border-radius: 5px;
+    padding: 30px;
+
 }
 
 
@@ -65,6 +76,73 @@ nav img{
     font-weight: 300;
 }
 
+/*----------------------
+     main section style
+---------------------- */
+
+main{
+    display: grid;
+    justify-items: center;
+}
+
+
+/* top section style */
+
+.title{
+    color: #562eff;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0 0 33px 0;
+}
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+
+}
+.player{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+
+}
+.player img{
+    height: 51px;
+}
+.player-nm{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.contener hr{
+    margin: 30px 0;
+
+}
+
+/* blog item style */
+
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 55px;
+}
+
+.blog{
+    display: flex;
+    gap: 16px;
+}
+
+.blog img{
+    width: 177px;
+}
+
+.blog-nm{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 5px 0 ;
+}
 
 
 
@@ -77,3 +155,33 @@ nav img{
 
 
 
+
+
+/*-----------------------------
+         Media query
+----------------------------=- */
+
+@media only screen and (max-width:672px){
+    header{
+        background: #000;
+    }
+    nav{
+        width: 90%;
+    }
+    .nav-link ul {
+        flex-direction: column;
+    }
+
+    /* top section style */
+
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+
+
+
+
+
+}
