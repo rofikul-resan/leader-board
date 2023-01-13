@@ -144,8 +144,51 @@ main{
     margin: 5px 0 ;
 }
 
+/* crouse section style */
 
+.courese-cards{
+    display: flex;
+    gap: 30px;
 
+}
+.card{
+    flex: 1;
+    padding: 15px;
+    box-shadow: 0px 0px 57px -41px #444;
+
+}
+.card img {
+    width: 224px;
+    margin-bottom:10px ;
+
+}
+.card .crs-title{
+    font-size: 20px;
+    font-weight: 500;
+    color: #1E1E1E;
+}
+.card p{
+    color: #ED6B4F;
+    font-size: 14px;
+}
+.crs-info{
+    display: flex;
+    justify-content: space-between;
+}
+.ratting .fa-star{
+    color: #FFC014;
+    margin-top: 8px;
+}
+.ratting  .ls{
+    color: #AEAEAE;
+}
+.time{
+    background: #ffe4e8;
+    color: #FF4A60;
+    padding: 5px;
+    border-radius: 15px;
+    margin-right: 20px;
+}
 
 
 
@@ -178,6 +221,20 @@ main{
         grid-template-columns: repeat(2, 1fr);
     }
 
+    /* blog item style */
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* crouse section style */
+
+    .courese-cards{
+        flex-direction: column;
+    }
+    .card img{
+        display: block;
+        margin: 0 auto 10px;
+    }
 
 
 
